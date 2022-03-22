@@ -1,6 +1,6 @@
 # TP-Us
 
-TP-Us is a script for QBCore providing commands for teleporting yourself and/or someone else to specified coordinates.
+TP-Us is a script for FiveM QBCore providing commands for teleporting yourself and/or someone else to specified coordinates.
 
 <h1>INSTALLATION GUIDE</h1>
 
