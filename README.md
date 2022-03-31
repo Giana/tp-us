@@ -19,7 +19,7 @@ TP-Us is a script for FiveM QBCore providing commands for teleporting yourself a
 
 **IMAGES**
 -----
-![/tpme Command](https://i.ibb.co/0fFZkCt/tpmecommand.gif)
+![/tpme Command](https://i.ibb.co/82FxtCt/tpmecommand.gif)
 
 **DEPENDENCIES**
 -----
