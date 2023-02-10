@@ -16,6 +16,8 @@ TP-Us is a script for FiveM QBCore providing commands for teleporting yourself a
   - Ex. /tpme -70.15 -1762.1 29.56
 - /tpyou [id] [x] [y] [z] used to teleport someone by server ID
   - Ex. /tpyou 4 -70.15 -1762.1 29.56
+- /tpus [id] [x] [y] [z] used to teleport yourself + someone by server ID
+    - Ex. /tpus 4 -70.15 -1762.1 29.56
 
 **IMAGES**
 -----
