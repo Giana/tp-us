@@ -10,6 +10,7 @@ RegisterNetEvent('tp-us:client:RequestCommands', function(isAllowed)
     if isAllowed and Config.CommandsEnabled then
         TriggerEvent('chat:addSuggestion', '/' .. Config.TpMeCommand, Lang:t('other.tp_yourself'), { { name = Lang:t('other.tp_yourself_x_name'), help = Lang:t('other.tp_yourself_x_help') }, { name = Lang:t('other.tp_yourself_y_name'), help = Lang:t('other.tp_yourself_y_help') }, { name = Lang:t('other.tp_yourself_z_name'), help = Lang:t('other.tp_yourself_z_help') } })
         TriggerEvent('chat:addSuggestion', '/' .. Config.TpYouCommand, Lang:t('other.tp_someone'), { { name = Lang:t('other.tp_someone_id_name'), help = Lang:t('other.tp_someone_id_help') }, { name = Lang:t('other.tp_someone_x_name'), help = Lang:t('other.tp_someone_x_help') }, { name = Lang:t('other.tp_someone_y_name'), help = Lang:t('other.tp_someone_y_help') }, { name = Lang:t('other.tp_someone_z_name'), help = Lang:t('other.tp_someone_z_help') } })
+        TriggerEvent('chat:addSuggestion', '/' .. Config.TpUsCommand, Lang:t('other.tp_us'), { { name = Lang:t('other.tp_us_id_name'), help = Lang:t('other.tp_us_id_help') }, { name = Lang:t('other.tp_us_x_name'), help = Lang:t('other.tp_us_x_help') }, { name = Lang:t('other.tp_us_y_name'), help = Lang:t('other.tp_us_y_help') }, { name = Lang:t('other.tp_us_z_name'), help = Lang:t('other.tp_us_z_help') } })
     end
 end)
 
