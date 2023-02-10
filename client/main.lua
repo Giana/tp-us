@@ -8,8 +8,8 @@ end)
 
 RegisterNetEvent('tp-us:client:RequestCommands', function(isAllowed)
     if isAllowed and Config.CommandsEnabled then
-        TriggerEvent('chat:addSuggestion', '/' .. Config.TpMeCommand, 'Teleport yourself to coordinates', {{name = 'x', help = 'x coordinate'}, {name = 'y', help = 'y coordinate'}, {name = 'z', help = 'z coordinate'}})
-        TriggerEvent('chat:addSuggestion', '/' .. Config.TpYouCommand, 'Teleport someone to coordinates', {{name = 'id', help = 'player ID'}, {name = 'x', help = 'x coordinate'}, {name = 'y', help = 'y coordinate'}, {name = 'z', help = 'z coordinate'}})
+        TriggerEvent('chat:addSuggestion', '/' .. Config.TpMeCommand, Lang:t('other.tp_yourself'), { { name = Lang:t('other.tp_yourself_x_name'), help = Lang:t('other.tp_yourself_x_help') }, { name = Lang:t('other.tp_yourself_y_name'), help = Lang:t('other.tp_yourself_y_help') }, { name = Lang:t('other.tp_yourself_z_name'), help = Lang:t('other.tp_yourself_z_help') } })
+        TriggerEvent('chat:addSuggestion', '/' .. Config.TpYouCommand, Lang:t('other.tp_someone'), { { name = Lang:t('other.tp_someone_id_name'), help = Lang:t('other.tp_someone_id_help') }, { name = Lang:t('other.tp_someone_x_name'), help = Lang:t('other.tp_someone_x_help') }, { name = Lang:t('other.tp_someone_y_name'), help = Lang:t('other.tp_someone_y_help') }, { name = Lang:t('other.tp_someone_z_name'), help = Lang:t('other.tp_someone_z_help') } })
     end
 end)
 

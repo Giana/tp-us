@@ -33,7 +33,7 @@ RegisterCommand(Config.TpMeCommand, function(source, args)
         if args and args[1] and args[2] and args[3] then
             TriggerEvent('tp-us:server:teleportMe', src, args[1], args[2], args[3])
         else
-            TriggerClientEvent('QBCore:Notify', src, 'All arguments required', 'error')
+            TriggerClientEvent('QBCore:Notify', src, Lang:t('error.args_required'), 'error')
         end
     end
 end)
@@ -45,7 +45,7 @@ RegisterCommand(Config.TpYouCommand, function(source, args)
         if args and args[1] and args[2] and args[3] and args[4] then
             TriggerEvent('tp-us:server:teleportYou', src, args[1], args[2], args[3], args[4])
         else
-            TriggerClientEvent('QBCore:Notify', src, 'All arguments required', 'error')
+            TriggerClientEvent('QBCore:Notify', src, Lang:t('error.args_required'), 'error')
         end
     end
 end)
@@ -71,7 +71,7 @@ AddEventHandler('tp-us:server:teleportMe', function(source, x, y, z)
     if xCoord and yCoord and zCoord then
         teleportPlayer(src, xCoord, yCoord, zCoord)
     else
-        TriggerClientEvent('QBCore:Notify', src, 'Error getting coordinates', 'error')
+        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.getting_coords'), 'error')
     end
 end)
 
@@ -88,13 +88,13 @@ AddEventHandler('tp-us:server:teleportYou', function(source, id, x, y, z)
             if validId(id) then
                 teleportPlayer(id, xCoord, yCoord, zCoord)
             else
-                TriggerClientEvent('QBCore:Notify', src, 'Error getting player from id', 'error')
+                TriggerClientEvent('QBCore:Notify', src, Lang:t('error.getting_player'), 'error')
             end
         else
-            TriggerClientEvent('QBCore:Notify', src, 'Error getting id', 'error')
+            TriggerClientEvent('QBCore:Notify', src, Lang:t('error.getting_id'), 'error')
         end
     else
-        TriggerClientEvent('QBCore:Notify', src, 'Error getting coordinates', 'error')
+        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.getting_coords'), 'error')
         return
     end
 end)

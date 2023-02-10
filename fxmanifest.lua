@@ -8,15 +8,15 @@ description 'tp-us'
 shared_script 'config.lua'
 
 client_scripts {
-	'client/main.lua'
+    'client/main.lua'
 }
 
 server_scripts {
-	'server/main.lua'
+    'server/main.lua'
 }
 
 dependencies {
-	'qb-core'
+    'qb-core'
 }
 
 lua54 'yes'
