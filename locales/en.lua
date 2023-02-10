@@ -21,7 +21,16 @@ local Translations = {
         tp_someone_y_name = 'y',
         tp_someone_y_help = 'y coordinate',
         tp_someone_z_name = 'z',
-        tp_someone_z_help = 'z coordinate'
+        tp_someone_z_help = 'z coordinate',
+        tp_us = 'Teleport yourself + someone to coordinates',
+        tp_us_id_name = 'id',
+        tp_us_id_help = 'player ID',
+        tp_us_x_name = 'x',
+        tp_us_x_help = 'x coordinate',
+        tp_us_y_name = 'y',
+        tp_us_y_help = 'y coordinate',
+        tp_us_z_name = 'z',
+        tp_us_z_help = 'z coordinate'
     }
 }
 

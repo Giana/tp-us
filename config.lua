@@ -7,3 +7,4 @@ Config.CommandsEnabled = true   -- Enable or disable use of below commands in se
 -- Commands --
 Config.TpMeCommand = 'tpme'     -- Command to teleport yourself to a location
 Config.TpYouCommand = 'tpyou'   -- Command to teleport someone else to a location
+Config.TpUsCommand = 'tpus'     -- Command to teleport yourself + someone else to a location

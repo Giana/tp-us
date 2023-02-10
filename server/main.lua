@@ -50,6 +50,19 @@ RegisterCommand(Config.TpYouCommand, function(source, args)
     end
 end)
 
+RegisterCommand(Config.TpUsCommand, function(source, args)
+    local src = source
+
+    if isAllowedToTeleport(src) then
+        if args and args[1] and args[2] and args[3] and args[4] then
+            TriggerEvent('tp-us:server:teleportMe', src, args[2], args[3], args[4])
+            TriggerEvent('tp-us:server:teleportYou', src, args[1], args[2], args[3], args[4])
+        else
+            TriggerClientEvent('QBCore:Notify', src, Lang:t('error.args_required'), 'error')
+        end
+    end
+end)
+
 -- Events --
 
 RegisterNetEvent('tp-us:server:RequestCommands')
